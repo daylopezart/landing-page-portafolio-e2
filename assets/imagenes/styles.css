@@ -1,0 +1,75 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,500;1,300;1,600&family=Roboto+Mono:wght@200;500&display=swap');
+:root{
+    --background:#0B0314;
+    --primary:#0B3954;
+    --secundary:#BFD7EA;
+    --bg-rojo:#FF4544;
+    --bg-amarillo:#FFBE3F;
+    --bg-azul:#0A2B57;
+
+    --text-gris:#DCDCDC;
+    --text-blanco: #FFFAF0;
+
+    --minion-dec: #F4E158;
+    --rich-black: #11191B;
+}
+
+ * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style-type: none;
+    font-family: "Poppins"; 
+  
+}
+
+header {
+    
+   justify-content: space-between;
+     width: 100%;
+    align-items: center;
+    height: 65px;
+    padding: 0px 30px 0px 30px ;
+    position: fixed;
+    top: 0;
+    display: flex;
+    background: var(--background) 
+
+}
+.logo {
+    height:100%;
+
+}
+
+.navbar,
+.navbar-list{
+   display: flex;
+   align-items: center;  
+   justify-content: center;
+
+}
+.navbar{
+    gap: 150px;
+}
+.navbar-list{
+    gap: 30px;
+}
+.navbar-list a {
+    color: var(--text-gris);
+    font-size: 14px;
+}
+.navbar-list li:first-child > a {
+    color: var(--text-blanco);
+    font-weight: 600;  
+}
+.cart-icon {
+    border: 1px solid var(--minion-dec);
+    padding: 15px 18px;
+    margin-top: 3px;
+    border-radius: 15px;
+    height: 50px;
+    font-weight: 600;
+    cursor: pointer;
+
+}
